@@ -43,8 +43,8 @@ public class ComposeActivity extends AppCompatActivity {
         //set click listener on button
         btnTweet.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-              String tweetContent =  etCompose.getText().toString();
+            public void onClick(View v){
+             final String tweetContent =  etCompose.getText().toString();
               if(tweetContent.isEmpty()){
                   Toast.makeText(ComposeActivity.this,"Sorry,your tweet cannot be empty",Toast.LENGTH_LONG).show();
                   return;
@@ -58,7 +58,7 @@ public class ComposeActivity extends AppCompatActivity {
                 client.publishTweet(tweetContent, new JsonHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Headers headers, JSON json) {
-                        Log.e(TAG, "onSuccess to publish tweet");
+                        Log.i(TAG, "onSuccess to publish tweet");
                         try {
                             Tweet tweet = Tweet.fromJson(json.jsonObject);
                             Log.i(TAG,"Published tweet says" + tweet);
