@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src=![TweetAble](https://user-images.githubusercontent.com/77361496/108011630-7b2a0280-6fd5-11eb-9174-097abc904698.gif) />
+![TweetAble](https://user-images.githubusercontent.com/77361496/108011630-7b2a0280-6fd5-11eb-9174-097abc904698.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
